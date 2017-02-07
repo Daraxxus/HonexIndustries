@@ -77,6 +77,6 @@ if ($( window ).width() < 1101 && $( window ).width() > 550) {
     });
 };
 
-$( window ).resize(function(){
+/*$( window ).resize(function(){
     location.reload();
-});
+});*/
