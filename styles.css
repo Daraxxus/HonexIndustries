@@ -363,6 +363,7 @@ footer p {
     button {
         font-size: 1em;
         width: 60px;
+        text-align: center;
     }
     
     #InputEmail ,#InputName, #TextInput {
