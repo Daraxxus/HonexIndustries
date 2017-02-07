@@ -147,7 +147,7 @@ jQuery(function($){
 
   $(window).resize(function() {
     if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
-      location.reload();
+      this.location.href = this.location.href;
       return;
     }
   });

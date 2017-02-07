@@ -27,6 +27,7 @@ canvas {
 .container {
     display: flex;
     flex-direction: row;
+    margin-top: 17%;
     /*justify-content: space-around;*/
 }
 
@@ -78,11 +79,10 @@ ul a {
     padding: 2%;
 }
 
-navbar {
+nav {
     width: 100%;
     white-space: nowrap;
     margin-left: 7%;
-    margin-top: 60%;
     float: left;
 }
 
@@ -380,6 +380,10 @@ footer p {
 }
 
 @media screen and (max-width: 1100px) and (min-width: 551px) {
+    .container{
+        margin-top: 0;    
+    }
+    
     #slide {
         border: 1.5px solid black;
         position:absolute;
