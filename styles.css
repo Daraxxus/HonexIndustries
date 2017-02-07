@@ -353,10 +353,10 @@ footer p {
         font-size: 1em;
         display: block;
         margin-top: 0;
-        margin-right: 10%;
+        width: 85%;
+        margin-right: 8%;
         margin-left: auto;
         padding: 1%;
-        width: 85%;
         min-height: 150px;
     }
     

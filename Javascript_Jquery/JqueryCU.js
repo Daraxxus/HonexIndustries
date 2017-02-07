@@ -141,6 +141,14 @@ if (($(window).width()<1101) && ($(window).width()>550)) {
     });
 }
 
-/*$( window ).resize(function(){
-    location.reload();
-});*/
+jQuery(function($){
+  var windowWidth = $(window).width();
+  var windowHeight = $(window).height();
+
+  $(window).resize(function() {
+    if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
+      location.reload();
+      return;
+    }
+  });
+});
