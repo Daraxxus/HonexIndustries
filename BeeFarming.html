@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bee Farming </title>
+        <link rel="icon" href="Images/favicon.ico" /> 
+        <meta charset="UTF-8"> 
+        <meta name = "viewport" content = "width = device-width">
+        <link rel = "stylesheet" href = "styles.css" />
+        
+        <!--javascript-->
+        <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+        <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+        <script language= "javascript" type="text/javascript" src="Javascript_Jquery/sketch.js"></script>
+        
+        <!--JQuery-->
+        <script src="libraries/jquery-3.1.1.js"></script>
+        
+    </head>
+    
+    <body>
+        <a href = "index.html"><img class= "Logo" src="Images/BeeNoWhite.png" alt = "Logo"></a>
+        <div class = "Logo_N">
+            <h1> honex </h1>
+            <h1> industries </h1>
+        </div>
+        
+        <article class = "BeeFarmingContent">
+            <h1 id = "BFC1">bee farming</h1>
+		    <p id = "one"> Apiculture, otherwise known as Bee farming or Bee keeping, refers to the maintenace of honey bee colonies, usually in hives, by humans. A Bee keeper (that's us!) keeps the bees in order to collect the products that they produce (such as honey, beeswax etc.), to pollinate crops and so on but most important amongst these is for our passion and hobby.</p>
+		
+        <br class = "break">
+            
+            <h1 id = "BFC2"> benefits of bee farming</h2>	
+			<h2 id="BFC2_1"> &#8226; fresh honey and other hive products &#8226;</h2>
+			<p id = "two"> Because the hive produces Honey, Beeswax etc, we have access to a fresh source to all these hive products. Using these we can create various products for sale (Available in the near future from us) </p>
+        
+        <br class = "break">
+            
+            <h2 id = "BFC2_2"> &#8226; pollination &#8226;</h2>
+			<p id = "three"> In addition to getting fresh hive products, Bee Keeping helps to improve the natural environment through pollination. As bees pollinate plants, they help increase the plant's health. These has been shown to increase crop value.</p>
+            
+        <br class = "break">
+            
+            <h2 id = "BFC2_3"> &#8226; enjoyment and entertainment &#8226;</h2>
+			<p id = "four"> We are first and foremost bee keeping enthuiast and we find excitement and joy looking after our bees. This is a passion of ours and as such is a great benefit of Bee Farming.</p>
+        </article>
+        
+        <div id = "slide" class = "container">      
+            <navbar>
+                <p id = "threelines"> &equiv; </p>
+                <ul id = "menu">
+                    <li id = "AU"><a href="AboutUs.html"> about us </a></li>
+                    <li id = "BFPage"><a href="#"> bee farming </a></li>
+                    <li id = "CU"><a href="ContactUs.html"> contact us </a></li>
+                    <li id = "JU"><a href="JoinUs.html"> join us </a></li>
+                </ul>
+            </navbar>
+        </div>
+        
+         <footer>
+		  <p> 45 Geyland Street </p>
+		  <p> Hexagon, HX 57689 </p>
+		  <p> (218) 555-5224 </p>
+	    </footer>
+        
+        <script src="Javascript_Jquery/JqueryBF.js"></script>
+        <script src="Plugins/SlickNav/dist/jquery.slicknav.js"></script>
+        <script>
+            $(function(){
+                $('#menu').slicknav();
+            });
+        </script>
+        <script src="Plugins/jquery.fittext.js"></script>
+        <script> 
+            jQuery("#BFC1").fitText();
+            jQuery("#BFC2").fitText();
+            jQuery("#BFC3").fitText();
+            jQuery("#BFC2_1").fitText(1.2, { minFontSize: '20px', maxFontSize: '100px' });
+            jQuery("#BFC2_2").fitText(1.2, { minFontSize: '20px', maxFontSize: '100px' });
+            jQuery("#BFC2_3").fitText(1.2, { minFontSize: '20px', maxFontSize: '100px' });
+        </script>
+        
+    </body>
+</html>

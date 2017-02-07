@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contact Us </title>
+        <link rel="icon" href="Images/favicon.ico" /> 
+        <meta charset="UTF-8"> 
+        <meta name = "viewport" content = "width = device-width">
+        <link rel = "stylesheet" href = "styles.css" />
+        
+        <!--javascript-->
+        <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+        <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+        <script language= "javascript" type="text/javascript" src="Javascript_Jquery/sketch.js"></script>
+        
+        <!--JQuery-->
+        <script src="libraries/jquery-3.1.1.js"></script>
+        
+    </head>
+    
+    <body>
+        <a href = "index.html"><img class= "Logo" src="Images/BeeNoWhite.png" alt = "Logo"></a>
+        <div class = "Logo_N">
+            <h1> honex </h1>
+            <h1> industries </h1>
+        </div>
+        
+        <article class = "ContactUsContent">
+            <h1 id = "CUCH1"> contact us </h1>
+            
+            <h2 id = "CUCH1_1"> address </h1>
+                <p id = "one"> 45 Geyland Street </p>
+                <p id = "two"> Hexagon, HX 57689 </p>
+                <p id = "three"> (218) 555-5224 </p>
+            
+        <br class = "break">
+            
+                <p id = "four"> Work Hours : 8am to 10pm </p>
+                <p id = "five"> Working Days : Monday to Saturday </p>
+        
+        <br class = "break"> 
+            
+            <h1 id = "CUCH2"> call/email us </h1>
+                <p id = "six"> Email: honexindustries@buzzmail.com </p>
+                <p id = "seven"> Number: (218) 555-5224 </p>
+
+        <br class = "break"> 
+            
+            <h1 id = "CUCH3"> hotline operating hours </h1>
+                <p id = "eight"> Mondays to Saturdays : 6am to 11pm </p>
+                <p id = "nine"> Sunday : 8am to 6pm </p>
+
+        <br class = "break"> 
+
+        <div id = "feedbackform">   
+            <h1 id = "CUCH4"> feedback </h1>
+            <form>
+                <fieldset class = "NameInput">
+                    <legend> Name </legend>
+                        <label for = "InputName">
+                            <input type = "text" Title = "Title" id = "InputName" placeholder = "Jeff Jefferson">
+                        </label>
+                </fieldset>
+
+                <fieldset class = "EmailInput">
+                    <legend> Email </legend>
+                    <label for = "InputEmail">
+                            <input type = "text" Title = "tags" id = "InputEmail" placeholder = "Jeff@cmail.com">       
+                    </label>
+                </fieldset>
+
+                <fieldset class = "TextInput">
+                    <legend> Feedback </legend>
+                    <label for = "TextInput">
+                            <textarea id = "TextInput" cols = "40" rows = "5" placeholder= "Input feedback here"></textarea>
+                    </label>
+                </fieldset>
+                
+                <button onclick = "myFunction()"> Submit </button>
+                
+                <script>
+                    function myFunction() {
+                        alert("Feedback Submitted");
+                    }
+                </script>
+                
+            </form>
+        </div>
+    </article>
+        
+        <div id = "slide" class = "container">             
+            <navbar>
+                <p id = "threelines"> &equiv; </p>
+                <ul id = "menu">
+                    <li id = "AU"><a href="AboutUs.html"> about us </a></li>    
+                    <li id = "BF"><a href="BeeFarming.html"> bee farming </a></li>
+                    <li id = "CUPage"><a href="#"> contact us </a></li>
+                    <li id = "JU"><a href="JoinUs.html"> join us </a></li>
+                </ul>
+            </navbar>            
+        </div>
+        
+         <footer>
+		  <p> 45 Geyland Street </p>
+		  <p> Hexagon, HX 57689 </p>
+		  <p> (218) 555-5224 </p>
+	    </footer>
+        
+        <script src="Javascript_Jquery/JqueryCU.js"></script>
+        <script src="Plugins/SlickNav/dist/jquery.slicknav.js"></script>
+        <script>
+            $(function(){
+                $('#menu').slicknav();
+            });
+        </script>
+        <script src="Plugins/jquery.fittext.js"></script>
+        <script> 
+            jQuery("#CUCH1").fitText();
+            jQuery("#CUCH2").fitText();
+            jQuery("#CUCH3").fitText();
+            jQuery("#CUCH4").fitText();
+            jQuery("#CUCH1_1").fitText(1.2, { minFontSize: '30px', maxFontSize: '180px' });
+        </script>
+        
+    </body>
+</html>

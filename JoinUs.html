@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Join Us </title>
+        <link rel="icon" href="Images/favicon.ico" /> 
+        <meta charset="UTF-8"> 
+        <meta name = "viewport" content = "width = device-width">
+        <link rel = "stylesheet" href = "styles.css" />
+        
+        <!--javascript-->
+        <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+        <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+        <script language= "javascript" type="text/javascript" src="Javascript_Jquery/sketch.js"></script>
+        
+        <!--JQuery-->
+        <script src="libraries/jquery-3.1.1.js"></script>
+        
+    </head>
+    
+    <body>
+        <a href = "index.html"><img class= "Logo" src="Images/BeeNoWhite.png" alt = "Logo"></a>
+        <div class = "Logo_N">
+            <h1> honex </h1>
+            <h1> industries </h1>
+        </div>
+        
+        <article class = "JoinUsContent">
+            <h1 id = "JUCH1">interested in joining us?</h1>
+            
+            <br class = "break">
+            
+            <p id = "one"> Honex Industries are always on the lookout for asipiring bee keepers who show true passion for this line of work. We will gladly nurture and grow anyone who are keen to follow us, as well as make Honex Industries the best hub for bee keeping related activites.</p>
+            
+            <br class = "break">
+            
+            <h1 id = "JUCH2">how do I join?</h1>
+            
+            <p id = "two"> Joining us is as simple as filling up the form below and waiting for our email to coming down to Honex Industries for an interview. With the method to sign up being so easy, why wait? Join us now! </p>
+            
+            <br class = "break">
+            
+            <div id = "JobApplicationForm">   
+                <h1 id = "JUCH3"> job application form </h1>
+                <form>
+                    <fieldset class = "NameInput">
+                        <legend> Input Name </legend>
+                        <label for = "InputName">
+                            <input type = "text" Title = "Title" id = "InputName" placeholder = "Jeff Jefferson">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class = "EmailInput">
+                        <legend> Email </legend>
+                        <label for = "InputEmail">
+                            <input type = "text" Title = "tags" id = "InputEmail" placeholder = "Jeff@cmail.com">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class = "TextInput">
+                        <legend> Text (Optional) </legend>
+                        <label for = "Inputtext">
+                            <textarea id = "TextInput" cols = "40" rows = "5" placeholder=" Why do you want to join us?"></textarea>
+                        </label>
+                    </fieldset>
+                    
+                <button onclick = "myFunction()"> Submit </button>
+                
+                <script>
+                    function myFunction() {
+                        alert("Feedback Submitted");
+                    }
+                </script>
+                    
+                </form>
+            </div>
+        </article>
+        
+        <div id = "slide" class = "container">    
+            <navbar>
+                <p id = "threelines"> &equiv; </p>
+                <ul id = "menu">
+                    <li id = "AU"><a href="AboutUs.html"> about us </a></li>
+                    <li id = "BF"><a href="BeeFarming.html"> bee farming </a></li>
+                    <li id = "CU"><a href="ContactUs.html"> contact us </a></li>
+                    <li id = "JUPage"><a href="#"> join us </a></li>
+                </ul>
+            </navbar>        
+        </div>
+        
+         <footer>
+		  <p> 45 Geyland Street </p>
+		  <p> Hexagon, HX 57689 </p>
+		  <p> (218) 555-5224 </p>
+	    </footer>
+        
+        <script src="Javascript_Jquery/JqueryJU.js"></script>
+        <script src="Plugins/SlickNav/dist/jquery.slicknav.js"></script>
+        <script>
+            $(function(){
+                $('#menu').slicknav();
+            });
+        </script>
+        <script src="Plugins/jquery.fittext.js"></script>
+        <script> 
+            jQuery("#JUCH1").fitText();
+            jQuery("#JUCH2").fitText();
+            jQuery("#JUCH3").fitText();
+        </script>
+    </body>
+</html>

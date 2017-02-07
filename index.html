@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Honex Industries </title>
+        <link rel="icon" href="Images/favicon.ico" /> 
+        <meta charset="UTF-8"> 
+        <meta name = "viewport" content = "width = device-width">
+        <link rel = "stylesheet" href = "styles.css" />  
+        
+        <!--javascript-->
+        <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+        <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+        <script language= "javascript" type="text/javascript" src="Javascript_Jquery/sketch.js"></script>
+        
+        <!--JQuery-->
+        <script src="libraries/jquery-3.1.1.js"></script>
+        
+    </head>
+    
+    <body>
+        <a href = "index.html"><img class= "Logo" src="Images/BeeNoWhite.png" alt = "Logo"></a>
+        <div class = "Logo_N">
+            <h1> honex </h1>
+            <h1> industries </h1>
+        </div>
+        
+        <article class = "MainPageContent">
+            <h1 id = "MPCH1">who are we?</h1>
+            
+            <br class = "break">
+            
+            <p id = "one"> We are a group of passionate bee farmers who are looking to attract interested people into this industry by educating them on bee farming.</p>
+            <p id = "two"> Interested in finding out more? Click any of the links at the side to learn more about Honex Industries!</p>
+        </article>
+        
+        <div id = "slide" class = "container">             
+            <navbar>
+                <p id = "threelines"> &equiv; </p>
+                <ul id = "menu">
+                    <li id = "AU"><a href="AboutUs.html"> about us </a></li>
+                    <li id = "BF"><a href="BeeFarming.html"> bee farming </a></li>
+                    <li id = "CU"><a href="ContactUs.html"> contact us </a></li>
+                    <li id = "JU"><a href="JoinUs.html"> join us </a></li>
+                </ul>
+            </navbar>
+        </div>
+        
+        <footer>
+		  <p> 45 Geyland Street </p>
+		  <p> Hexagon, HX 57689 </p>
+		  <p> (218) 555-5224 </p>
+	    </footer>
+        
+        <script src="Javascript_Jquery/JqueryMain.js"></script>
+        <script src="Plugins/SlickNav/dist/jquery.slicknav.js"></script>
+        <script>
+            $(function(){
+                $('#menu').slicknav();
+            });
+        </script>
+        <script src="Plugins/jquery.fittext.js"></script>
+        <script> 
+            jQuery("#MPCH1").fitText();
+        </script>
+    </body>
+</html>
