@@ -123,7 +123,7 @@ a {
 
 .BeeFarmingContent h2, .ContactUsContent h2 {
     font-family: Langdon;
-    font-size: 2e;
+    font-size: 2em;
     text-align: center;
 }
 .MainPageContent p, .AboutUsContent p, .BeeFarmingContent p, .ContactUsContent p, .JoinUsContent p, .MainPageContent h1 , .AboutUsContent h1, .BeeFarmingContent h1, .ContactUsContent h1, .JoinUsContent h1, .BeeFarmingContent h2, .ContactUsContent h2 {
@@ -140,7 +140,7 @@ form {
     margin: 1%;
 }
 
-#TextInput {
+#Inputtext{
 	width : 98%;
 	height : 400px;
 	box-sizing: border-box;
@@ -387,7 +387,6 @@ footer p {
         width:150px;
         height:1900px;
         background-color:rgba(125,209,70,1);
-        layer-background-color:rgba(125,209,70,0.5);
     }
     
     #slide a {
