@@ -363,8 +363,6 @@ footer p {
     button {
         font-size: 1em;
         width: 60px;
-        text-align: center;
-        vertical-align: middle;
     }
     
     #InputEmail ,#InputName, #TextInput {
@@ -414,6 +412,10 @@ footer p {
     
     .Logo {
         margin-left: 8%;
+    }
+    
+    button {
+        font-size: 1em;
     }
 }
 
