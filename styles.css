@@ -385,7 +385,7 @@ footer p {
         top:-3px;
         left:-120px;
         width:150px;
-        height:10000px;
+        height:1900px;
         background-color:rgba(125,209,70,1);
         layer-background-color:rgba(125,209,70,0.5);
     }
@@ -413,5 +413,27 @@ footer p {
     
     .Logo {
         margin-left: 8%;
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    .MainPageContent, .AboutUsContent, .BeeFarmingContent, .ContactUsContent, .JoinUsContent {
+    font-family: klinic;
+    font-size: 2em;
+    display: flex; 
+    flex-direction: column;
+    width: 65%;
+    min-height: 335px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 20%;
+    background-color: #7DD146;
+    background-color: rgba(125,209,70,0.5);
+    margin-bottom: 4%;
+    border-radius: 15px;
+    }   
+    
+    #threelines {
+        font-size: 0;
     }
 }
