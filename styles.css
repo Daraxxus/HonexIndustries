@@ -188,14 +188,15 @@ footer p {
   .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
     margin-top: 0.188em; }
 
-.slicknav_menu {
-  *zoom: 1; 
+.slicknav_menu { 
     display: none;
 }
   .slicknav_menu .slicknav_menutxt {
     display: block;
     line-height: 1.188em;
-    float: left; }
+    float: left; 
+}
+
   .slicknav_menu .slicknav_icon {
     float: left;
     width: 1.125em;
