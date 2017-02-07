@@ -75,7 +75,7 @@ if ($( window ).width() < 1101 && $( window ).width() > 550) {
         $(".MainPageContent").css("margin-left", "7%");
         $(".Logo").css("margin-left", "8%");
     });
-}
+};
 
 $( window ).resize(function(){
     location.reload();
