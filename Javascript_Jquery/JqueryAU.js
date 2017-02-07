@@ -123,7 +123,7 @@ $("#JU").hover(
         $(".break").show();
     }); //when hover on JoinUs link, generate text
 
-if ($( window ).width() < 1101 && $( window ).width() > 550) {
+if (($(window).width()<1101) && ($(window).width()>550)) {
     $('#slide').hover(function () {
         $(this).stop().animate({left:"0px"},500); 
         $(".AboutUsContent").css("width", "69%");
@@ -138,6 +138,6 @@ if ($( window ).width() < 1101 && $( window ).width() > 550) {
     });
 }
 
-$( window ).resize(function(){
+/*$( window ).resize(function(){
     location.reload();
-});
+});*/
