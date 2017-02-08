@@ -82,12 +82,12 @@ if (($(window).width()<1101) && ($(window).width()>550)) {
     $('#slide').hover(function () {
         $(this).stop().animate({left:"0px"},500); 
         $(".JoinUsContent").css("width", "72%");
-        $(".JoinUsContent").css("margin-left", "130px");
+        $(".JoinUsContent").css("margin-left", "120px");
         $(".Logo").css("margin-left", "155px");
         $("#slide a").css("font-size", "1.4em");
    },function () {
         var width = $(this).width() -10;
-        $(this).stop().animate({left: -130  },500);  
+        $(this).stop().animate({left: -120  },500);  
         $("#slide a").css("font-size", "0");
         $(".JoinUsContent").css("width", "90%"); 
         $(".JoinUsContent").css("margin-left", "7%");

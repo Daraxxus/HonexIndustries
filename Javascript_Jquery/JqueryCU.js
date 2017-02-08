@@ -130,12 +130,12 @@ if (($(window).width()<1101) && ($(window).width()>550)) {
     $('#slide').hover(function () {
         $(this).stop().animate({left:"0px"},500); 
         $(".ContactUsContent").css("width", "72%");
-        $(".ContactUsContent").css("margin-left", "130px");
+        $(".ContactUsContent").css("margin-left", "120px");
         $(".Logo").css("margin-left", "155px");
         $("#slide a").css("font-size", "1.4em");
    },function () {
         var width = $(this).width() -10;
-        $(this).stop().animate({left: -130  },500); 
+        $(this).stop().animate({left: -120  },500); 
         $("#slide a").css("font-size", "0");
         $(".ContactUsContent").css("width", "90%"); 
         $(".ContactUsContent").css("margin-left", "7%");
