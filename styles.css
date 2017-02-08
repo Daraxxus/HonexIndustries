@@ -412,6 +412,7 @@ footer p {
         left:-130px;
         width:150px;
         height:100%;
+        min-height: 600px;
         background-color:rgba(125,209,70,1);
     }
     
