@@ -14,7 +14,12 @@
         
         <!--JQuery-->
         <script src="libraries/jquery-3.1.1.js"></script>
-        
+        <script src="Plugins/jquery.scrollUp.js"></script>
+        <script>
+            $(function () {
+                $.scrollUp();
+            });
+        </script>
     </head>
     
     <body>
@@ -99,11 +104,10 @@
             </nav>            
         </div>
         
-         <footer>
-		  <p> 45 Geyland Street </p>
-		  <p> Hexagon, HX 57689 </p>
-		  <p> (218) 555-5224 </p>
-	    </footer>
+        <footer>
+            <p> &copy; Honex Industries 2016-2017 </p>
+            <p> 97.6% Javascript, 1.5% HTML, 0.9% CSS, 100% awesome</p>
+	     </footer>
         
         <script src="Javascript_Jquery/JqueryCU.js"></script>
         <script src="Plugins/SlickNav/dist/jquery.slicknav.js"></script>
@@ -120,6 +124,5 @@
             jQuery("#CUCH4").fitText();
             jQuery("#CUCH1_1").fitText(1.2, { minFontSize: '30px', maxFontSize: '180px' });
         </script>
-        
     </body>
 </html>

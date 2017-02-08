@@ -16,7 +16,7 @@ body {
 }
 
 canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -167,7 +167,7 @@ button {
 }
 
 footer {
-    text-align : right;
+    text-align : center;
 	font-size : 0.8em;
 	clear : both;
     /*background-image : url("Images/Soil.png");
@@ -178,7 +178,6 @@ footer {
 
 footer p {
     font-family: Klinic;
-    margin-right: 1%;
 }
 
 .ContactUsContent p {
@@ -338,6 +337,33 @@ footer p {
   padding: 7px 12px;
   height: 44px; }
 
+#scrollUp {
+    bottom: -20px;
+    right: 30px;
+    width: 70px;
+    height: 60px;
+    padding: 10px 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    color: #828282;
+    -webkit-box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+    background-color: #E6E6E6;
+    background-image: -moz-linear-gradient(top,#ebebeb,#dedede);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#ebebeb),to(#dedede));
+    background-image: -webkit-linear-gradient(top,#ebebeb,#dedede);
+    background-image: -o-linear-gradient(top,#ebebeb,#dedede);
+    background-image: linear-gradient(to bottom,#ebebeb,#dedede);
+    background-repeat: repeat-x;
+    -webkit-transition: bottom 150ms linear;
+    -moz-transition: bottom 150ms linear;
+    transition: bottom 150ms linear;
+}
 /* Responsive*/
 @media screen and (max-width: 550px) {
     /* #menu is the original menu */
