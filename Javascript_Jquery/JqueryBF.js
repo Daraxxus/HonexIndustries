@@ -111,12 +111,14 @@ $("#JU").hover(
 if (($(window).width()<1101) && ($(window).width()>550)) {
     $('#slide').hover(function () {
         $(this).stop().animate({left:"0px"},500); 
-        $(".BeeFarmingContent").css("width", "69%");
-        $(".BeeFarmingContent").css("margin-left", "155px");
+        $(".BeeFarmingContent").css("width", "72%");
+        $(".BeeFarmingContent").css("margin-left", "130px");
         $(".Logo").css("margin-left", "155px");
+        $("#slide a").css("font-size", "1.4em");
     },function () {
         var width = $(this).width() -10;
-        $(this).stop().animate({left: -120  },500);  
+        $(this).stop().animate({left: -130  },500); 
+        $("#slide a").css("font-size", "0");
         $(".BeeFarmingContent").css("width", "90%"); 
         $(".BeeFarmingContent").css("margin-left", "7%");
         $(".Logo").css("margin-left", "8%");
