@@ -467,3 +467,22 @@ footer p {
         font-size: 0;
     }
 }
+@media screen and (min-width: 1400px){
+    .MainPageContent, .AboutUsContent, .BeeFarmingContent, .ContactUsContent, .JoinUsContent {
+        margin-top: 15%;
+        font-size: 3em;
+        min-height: 500px;
+    }
+    
+    #menu{
+        font-size: 1.5em;
+    }
+    
+    .Logo_N {
+        font-size: 2em;
+    }
+    
+    .Logo {
+        max-height: 200px;
+    }
+}
