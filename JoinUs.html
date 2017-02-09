@@ -68,9 +68,27 @@
                         </label>
                     </fieldset>
                     
-                <button onclick = "myFunction()"> Submit </button>
+                <button onclick = "validate()"> Submit </button>
                 
                 <script>
+                    function validateEmail(email) {
+                        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                        return re.test(email);
+                    }
+
+                    function validate() {
+                        var email = $("#InputEmail").val();
+                        if (validateEmail(email)) {
+                            myFunction();
+                    } else {
+                            alert(email + " is not valid");
+                            $("IntputEmail").css("color", "red");
+                    }
+                        return false;
+                    }
+
+                    $("#validate").bind("click", validate);
+                    
                     function myFunction() {
                         alert("Feedback Submitted");
                     }
