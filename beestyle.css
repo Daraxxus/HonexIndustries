@@ -7,11 +7,28 @@ body{
     padding: 0; 
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
 	position: relative;
 }
 
 #defaultCanvas0 {
-	position: static;
+	position: absolute;
+    margin-left: 60%;
+    margin-top: 2%;
+}
+
+header {
+    position: absolute;
+    display: block;
+    max-height: 20%;
+    margin-left: 10%;
+    margin-top: 8%;
+    text-align: center;
+}
+#instructions {
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin-left: 23%;
+    max-height: 50%;
+    margin-top: 18%;
 }

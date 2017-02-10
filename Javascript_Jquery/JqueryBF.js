@@ -1,12 +1,22 @@
 $(function() {
-    $("#BFPage").css("background-color", "rgba(125,209,70,0.5)");
-    $("#BFPage").css("border-radius", "15px 0 0 15px");
+    if (!($(window).width()<1101) && ($(window).width()>550)) {
+        $("#BFPage").css("background-color", "rgba(125,209,70,0.5)");
+        $("#BFPage").css("border-radius", "15px 0 0 15px");
+    }
 }); 
 
 $("#AU").hover(
     function() {
-        $("#AU").css("background-color", "rgba(125,209,70,0.5)");
-        $("#AU").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#AU").css("border-radius", "15px 15px 15px 15px");
+            $("#AU").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#AU").css("border-radius", "15px 0 0 15px");
+            $("#AU").css("background-color", "rgba(125,209,70,0.5)");
+        }
         $("#one").text("Want to learn more about us?");
         $("#two").text("Click here to learn more!");
         $("#three").text("");
@@ -20,7 +30,14 @@ $("#AU").hover(
         $(".break").hide();
     }, function() {
         $("#AU").css("background-color", "");
-        $("#BFPage").css("background-color", "rgba(125,209,70,0.5)");
+         if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#BFPage").css("background-color", "rgba(255,220,63,0.5)");
+        } 
+        else 
+        {
+            $("#BFPage").css("background-color", "rgba(125,209,70,0.5)");   
+        }
         
         $("#BFC1").text("about bee farming");
         $("#one").text("Apiculture, otherwise known as Bee farming or Bee keeping, refers to the maintenace of honey bee colonies, usually in hives, by humans. A Bee keeper (that's us!) keeps the bees in order to collect the products that they produce (such as honey, beeswax etc.), to pollinate crops and so on but most important amongst these is for our passion and hobby.");
@@ -40,8 +57,16 @@ $("#AU").hover(
 
 $("#CU").hover(
     function() {
-        $("#CU").css("background-color", "rgba(125,209,70,0.5)");
-        $("#CU").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#CU").css("border-radius", "15px 15px 15px 15px");
+            $("#CU").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#CU").css("border-radius", "15px 0 0 15px");
+            $("#CU").css("background-color", "rgba(125,209,70,0.5)");
+        }
         $("#one").text("Want to ask us questions?");
         $("#two").text("Find out how to contact us!");
         $("#three").text("");
@@ -55,7 +80,14 @@ $("#CU").hover(
         $(".break").hide();
     }, function() {
         $("#CU").css("background-color", "");
-        $("#BFPage").css("background-color", "rgba(125,209,70,0.5)");
+         if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#BFPage").css("background-color", "rgba(255,220,63,0.5)");
+        } 
+        else 
+        {
+            $("#BFPage").css("background-color", "rgba(125,209,70,0.5)");   
+        }
         
         $("#BFC1").text("about bee farming");
         $("#one").text("Apiculture, otherwise known as Bee farming or Bee keeping, refers to the maintenace of honey bee colonies, usually in hives, by humans. A Bee keeper (that's us!) keeps the bees in order to collect the products that they produce (such as honey, beeswax etc.), to pollinate crops and so on but most important amongst these is for our passion and hobby.");
@@ -75,8 +107,16 @@ $("#CU").hover(
 
 $("#JU").hover(
     function() {
-        $("#JU").css("background-color", "rgba(125,209,70,0.5)");
-        $("#JU").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#JU").css("border-radius", "15px 15px 15px 15px");
+            $("#JU").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#JU").css("border-radius", "15px 0 0 15px");
+            $("#JU").css("background-color", "rgba(125,209,70,0.5)");
+        }
         $("#one").text("Interested in joining us?");
         $("#two").text("Click here to learn more!");
         $("#three").text("");
@@ -90,7 +130,14 @@ $("#JU").hover(
         $(".break").hide();
     }, function() {
         $("#JU").css("background-color", "");
-        $("#BFPage").css("background-color", "rgba(125,209,70,0.5)");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#BFPage").css("background-color", "rgba(255,220,63,0.5)");
+        } 
+        else 
+        {
+            $("#BFPage").css("background-color", "rgba(125,209,70,0.5)");   
+        }
        
         $("#BFC1").text("about bee farming");
         $("#one").text("Apiculture, otherwise known as Bee farming or Bee keeping, refers to the maintenace of honey bee colonies, usually in hives, by humans. A Bee keeper (that's us!) keeps the bees in order to collect the products that they produce (such as honey, beeswax etc.), to pollinate crops and so on but most important amongst these is for our passion and hobby.");
@@ -115,6 +162,8 @@ if (($(window).width()<1101) && ($(window).width()>550)) {
         $(".BeeFarmingContent").css("margin-left", "120px");
         $(".Logo").css("margin-left", "155px");
         $("#slide a").css("font-size", "1.4em");
+        $("#BFPage").css("background-color", "rgba(255,220,63,0.5)");
+        $("#BFPage").css("border-radius", "15px 15px 15px 15px");
     },function () {
         var width = $(this).width() -10;
         $(this).stop().animate({left: -120  },500); 
@@ -122,6 +171,8 @@ if (($(window).width()<1101) && ($(window).width()>550)) {
         $(".BeeFarmingContent").css("width", "90%"); 
         $(".BeeFarmingContent").css("margin-left", "7%");
         $(".Logo").css("margin-left", "8%");
+        $("#BFPage").css("background-color", "");
+        $("#BFPage").css("border-radius", "");
     });
 }
 

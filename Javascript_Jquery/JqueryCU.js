@@ -1,13 +1,24 @@
 $(function() {
-    $("#CUPage").css("background-color", "rgba(125,209,70,0.5)");
-    $("#CUPage").css("border-radius", "15px 0 0 15px");
+    if (!($(window).width()<1101) && ($(window).width()>550)) {
+        $("#CUPage").css("background-color", "rgba(125,209,70,0.5)");
+        $("#CUPage").css("border-radius", "15px 0 0 15px");
+    }
 }); 
 
 $("#AU").hover(
     function() {
         $("#CUPage").css("background-color", "");
-        $("#AU").css("background-color", "rgba(125,209,70,0.5)");
-        $("#AU").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#AU").css("border-radius", "15px 15px 15px 15px");
+            $("#AU").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#AU").css("border-radius", "15px 0 0 15px");
+            $("#AU").css("background-color", "rgba(125,209,70,0.5)");
+        }
+        
         
         $("#one").text("Want to learn more about us?");
         $("#two").text("Click here to learn more!");
@@ -26,8 +37,15 @@ $("#AU").hover(
         $("#feedbackform").hide();
     }, function() {
         $("#AU").css("background-color", "");
-        $("#CUPage").css("background-color", "rgba(125,209,70,0.5)");
-        
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#CUPage").css("background-color", "rgba(255,220,63,0.5)");
+        } 
+        else 
+        {
+            $("#CUPage").css("background-color", "rgba(125,209,70,0.5)");   
+        }
+       
         $("#CUCH1").text("contact us");
         $("#CUCH1_1").text("address");
         $("#CUCH2").text("call/email us");
@@ -48,7 +66,16 @@ $("#BF").hover(
     function() {
         $("#CUPage").css("background-color", "");
         $("#BF").css("background-color", "rgba(125,209,70,0.5)");
-        $("#BF").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#BF").css("border-radius", "15px 15px 15px 15px");
+            $("#BF").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#BF").css("border-radius", "15px 0 0 15px");
+            $("#BF").css("background-color", "rgba(125,209,70,0.5)");
+        }
         
         $("#one").text("Want to know what the buzz about bee farming is about?");
         $("#two").text("Click here to learn more!");
@@ -67,7 +94,14 @@ $("#BF").hover(
         $("#feedbackform").hide();
     }, function() {
         $("#BF").css("background-color", "");
-        $("#CUPage").css("background-color", "rgba(125,209,70,0.5)");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#CUPage").css("background-color", "rgba(255,220,63,0.5)");
+        } 
+        else 
+        {
+            $("#CUPage").css("background-color", "rgba(125,209,70,0.5)");   
+        }
         
         $("#CUCH1").text("contact us");
         $("#CUCH1_1").text("address");
@@ -88,8 +122,16 @@ $("#BF").hover(
 $("#JU").hover(
     function() {
         $("#CUPage").css("background-color", "");
-        $("#JU").css("background-color", "rgba(125,209,70,0.5)");
-        $("#JU").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#JU").css("border-radius", "15px 15px 15px 15px");
+            $("#JU").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#JU").css("border-radius", "15px 0 0 15px");
+            $("#JU").css("background-color", "rgba(125,209,70,0.5)");
+        }
         
         $("#one").text("Interested in joining us?");
         $("#two").text("Click here to learn more!");
@@ -108,7 +150,14 @@ $("#JU").hover(
         $("#feedbackform").hide();
     }, function() {
         $("#JU").css("background-color", "");
-        $("#CUPage").css("background-color", "rgba(125,209,70,0.5)");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#CUPage").css("background-color", "rgba(255,220,63,0.5)");
+        } 
+        else 
+        {
+            $("#CUPage").css("background-color", "rgba(125,209,70,0.5)");   
+        }
         
         $("#CUCH1").text("contact us");
         $("#CUCH1_1").text("address");
@@ -133,6 +182,8 @@ if (($(window).width()<1101) && ($(window).width()>550)) {
         $(".ContactUsContent").css("margin-left", "120px");
         $(".Logo").css("margin-left", "155px");
         $("#slide a").css("font-size", "1.4em");
+        $("#CUPage").css("background-color", "rgba(255,220,63,0.5)");
+        $("#CUPage").css("border-radius", "15px 15px 15px 15px");
    },function () {
         var width = $(this).width() -10;
         $(this).stop().animate({left: -120  },500); 
@@ -140,6 +191,8 @@ if (($(window).width()<1101) && ($(window).width()>550)) {
         $(".ContactUsContent").css("width", "90%"); 
         $(".ContactUsContent").css("margin-left", "7%");
         $(".Logo").css("margin-left", "8%");
+        $("#CUPage").css("background-color", "");
+        $("#CUPage").css("border-radius", "");
     });
 }
 

@@ -1,7 +1,15 @@
 $("#AU").hover(
     function() {
-        $("#AU").css("background-color", "rgba(125,209,70,0.5)");
-        $("#AU").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#AU").css("border-radius", "15px 15px 15px 15px");
+            $("#AU").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#AU").css("border-radius", "15px 0 0 15px");
+            $("#AU").css("background-color", "rgba(125,209,70,0.5)");
+        }
         $("#one").text("Want to learn more about us?");
         $("#two").text("Click here to learn more!");
         $("#MPCH1").text("");
@@ -16,8 +24,16 @@ $("#AU").hover(
 
 $("#BF").hover(
     function() {
-        $("#BF").css("background-color", "rgba(125,209,70,0.5)");
-        $("#BF").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#BF").css("border-radius", "15px 15px 15px 15px");
+            $("#BF").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#BF").css("border-radius", "15px 0 0 15px");
+            $("#BF").css("background-color", "rgba(125,209,70,0.5)");
+        }
         $("#one").text("Want to know what the buzz about bee farming is about?");
         $("#two").text("Click here to learn more!");
         $("#MPCH1").text("");
@@ -32,8 +48,16 @@ $("#BF").hover(
 
 $("#CU").hover(
     function() {
-        $("#CU").css("background-color", "rgba(125,209,70,0.5)");
-        $("#CU").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#CU").css("border-radius", "15px 15px 15px 15px");
+            $("#CU").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#CU").css("border-radius", "15px 0 0 15px");
+            $("#CU").css("background-color", "rgba(125,209,70,0.5)");
+        }
         $("#one").text("Want to ask us questions?");
         $("#two").text("Find out how to contact us!");
         $("#MPCH1").text("");
@@ -48,8 +72,16 @@ $("#CU").hover(
 
 $("#JU").hover(
     function() {
-        $("#JU").css("background-color", "rgba(125,209,70,0.5)");
-        $("#JU").css("border-radius", "15px 0 0 15px");
+        if (($(window).width()<1101) && ($(window).width()>550)) 
+        {
+            $("#JU").css("border-radius", "15px 15px 15px 15px");        
+            $("#JU").css("background-color", "rgba(255,220,63,0.5)");
+        }
+        else 
+        {
+            $("#JU").css("border-radius", "15px 0 0 15px");
+            $("#JU").css("background-color", "rgba(125,209,70,0.5)");
+        }
         $("#one").text("Interested in joining us?");
         $("#two").text("Click here to learn more!");
         $("#MPCH1").text("");

@@ -9,6 +9,7 @@ var y_rect;
 var x_rect;
 var score = 0;
 var Sound;
+var restart;
 
 function reset() {
     x = 50;
@@ -23,6 +24,7 @@ function setup() {
 	createCanvas(360, 550);
     fill(50);
     reset();
+    restart = false;
     img = loadImage("Images/Bee.png");
 }
 
@@ -40,6 +42,7 @@ function draw() {
         text ("Game Over", width/2-25, height/2);
         text (score, width/2, height/2+20);
         noLoop();
+        restart = true;
     } //game over
     
     x += dx;
@@ -65,6 +68,12 @@ function keyPressed() {
         if (y_rect + h/2 <500){
             y_rect += 40;
         } 
+    }
+}
+
+function mousePressed() {
+    if (restart) {
+        window.location.href = window.location.href;
     }
 }
 
