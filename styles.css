@@ -498,9 +498,9 @@ footer p {
 
 @media screen and (min-width: 1400px){
     .MainPageContent, .AboutUsContent, .BeeFarmingContent, .ContactUsContent, .JoinUsContent {
-        margin-top: 5%;
+        margin-top: 20%;
         font-size: 3em;
-        min-height: 500px;
+        min-height: 450px;
     }
     
     #menu{
