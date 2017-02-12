@@ -31,6 +31,8 @@ $("#BF").hover(
         $("#AUH2").text("");
         $("#AUH3").text("");
         $(".break").hide();
+        $("#Who1").hide();
+        $("#Who2").hide();
     }, function() {
         $("#BF").css("background-color", "");
         if (($(window).width()<1101) && ($(window).width()>550)) 
@@ -58,6 +60,8 @@ $("#BF").hover(
         $("#nine").html("&#8226; Public Relations (PR) : Boey Allen");
         
         $(".break").show();
+        $("#Who1").show();
+        $("#Who2").show();
     }); //when hover on BeeFarming link, generate text
 
 $("#CU").hover(
@@ -86,6 +90,8 @@ $("#CU").hover(
         $("#AUH2").text("");
         $("#AUH3").text("");
         $(".break").hide();
+        $("#Who1").hide();
+        $("#Who2").hide();
     }, function() {
         $("#CU").css("background-color", "");
         if (($(window).width()<1101) && ($(window).width()>550)) 
@@ -113,6 +119,8 @@ $("#CU").hover(
         $("#nine").html("&#8226; Public Relations (PR) : Boey Allen");
         
         $(".break").show();
+        $("#Who1").show();
+        $("#Who2").show();
     }); //when hover on ContactUs link, generate text
 
 $("#JU").hover(
@@ -141,6 +149,8 @@ $("#JU").hover(
         $("#AUH2").text("");
         $("#AUH3").text("");
         $(".break").hide();
+        $("#Who1").hide();
+        $("#Who2").hide();
     }, function() {
         $("#JU").css("background-color", "");
         if (($(window).width()<1101) && ($(window).width()>550)) 
@@ -168,12 +178,14 @@ $("#JU").hover(
         $("#nine").html("&#8226; Public Relations (PR) : Boey Allen");
         
         $(".break").show();
+        $("#Who1").show();
+        $("#Who2").show();
     }); //when hover on JoinUs link, generate text
 
 if (($(window).width()<1101) && ($(window).width()>550)) {
     $('#slide').hover(function () {
         $(this).stop().animate({left:"0px"},500); 
-        $(".AboutUsContent").css("width", "72%");
+        $(".AboutUsContent").css("width", "80%");
         $(".AboutUsContent").css("margin-left", "120px");
         $(".Logo").css("margin-left", "155px");
         $("#slide a").css("font-size", "1.4em");

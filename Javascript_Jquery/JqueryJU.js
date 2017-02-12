@@ -128,7 +128,7 @@ $("#CU").hover(
 if (($(window).width()<1101) && ($(window).width()>550)) {
     $('#slide').hover(function () {
         $(this).stop().animate({left:"0px"},500); 
-        $(".JoinUsContent").css("width", "72%");
+        $(".JoinUsContent").css("width", "80%");
         $(".JoinUsContent").css("margin-left", "120px");
         $(".Logo").css("margin-left", "155px");
         $("#slide a").css("font-size", "1.4em");

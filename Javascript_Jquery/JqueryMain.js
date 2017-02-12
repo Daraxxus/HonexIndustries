@@ -14,12 +14,14 @@ $("#AU").hover(
         $("#two").text("Click here to learn more!");
         $("#MPCH1").text("");
         $(".break").hide();
+        $("#Happy").hide();
     }, function() {
         $("#AU").css("background-color", "");
         $("#one").text("We are a group of passionate bee farmers who are looking to attract interested people into this industry by educating them on bee farming.");
         $("#two").text("Interested in finding out more? Click any of the links at the side to learn more about Honex Industries!");
         $("#MPCH1").text("who are we?");
         $(".break").show();
+        $("#Happy").show();
     }); //when hover on AboutUs link, generate text
 
 $("#BF").hover(
@@ -38,12 +40,14 @@ $("#BF").hover(
         $("#two").text("Click here to learn more!");
         $("#MPCH1").text("");
         $(".break").hide();
+        $("#Happy").hide();
     }, function() {
         $("#BF").css("background-color", "");
         $("#one").text("We are a group of passionate bee farmers who are looking to attract interested people into this industry by educating them on bee farming.");
         $("#two").text("Interested in finding out more? Click any of the links at the side to learn more about Honex Industries!");
         $("#MPCH1").text("who are we?");
         $(".break").show();
+        $("#Happy").show();
     }); //when hover on BeeFarming link, generate text
 
 $("#CU").hover(
@@ -62,12 +66,14 @@ $("#CU").hover(
         $("#two").text("Find out how to contact us!");
         $("#MPCH1").text("");
         $(".break").hide();
+        $("#Happy").hide();
     }, function() {
         $("#CU").css("background-color", "");
         $("#one").text("We are a group of passionate bee farmers who are looking to attract interested people into this industry by educating them on bee farming.");
         $("#two").text("Interested in finding out more? Click any of the links at the side to learn more about Honex Industries!");
         $("#MPCH1").text("who are we?");
         $(".break").show();
+        $("#Happy").show();
     }); //when hover on ContactUs link, generate text
 
 $("#JU").hover(
@@ -86,18 +92,20 @@ $("#JU").hover(
         $("#two").text("Click here to learn more!");
         $("#MPCH1").text("");
         $(".break").hide();
+        $("#Happy").hide();
     }, function() {
         $("#JU").css("background-color", "");
         $("#one").text("We are a group of passionate bee farmers who are looking to attract interested people into this industry by educating them on bee farming.");
         $("#two").text("Interested in finding out more? Click any of the links at the side to learn more about Honex Industries!");
         $("#MPCH1").text("who are we?");
         $(".break").show();
+        $("#Happy").show();
     }); //when hover on JoinUs link, generate text
 
 if (($(window).width()<1101) && ($(window).width()>550)) {
     $('#slide').hover(function () {
         $(this).stop().animate({left:"0px"},500); 
-        $(".MainPageContent").css("width", "72%");
+        $(".MainPageContent").css("width", "80%");
         $(".MainPageContent").css("margin-left", "120px");
         $(".Logo").css("margin-left", "155px");
         $("#slide a").css("font-size", "1.4em");
